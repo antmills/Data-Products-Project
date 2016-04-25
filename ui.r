@@ -17,7 +17,7 @@ shinyUI(fluidPage(
                 sidebarPanel(
                         selectInput("var",label = "Select the appropriate variable", choices = c("Depth"=1, "Magnitude"=2, "Stations"=3)),
                         
-                        sliderInput("mybin", "Select the number of histogram BINs by using the slider below", min=100, max=500, value=250),
+                        sliderInput("mybin", "Select the number of histogram BINs by using the slider below", min=3, max=50, value=20),
                         
                         radioButtons("color", label = "Select the desired color of histogram",
                                      choices = c("Blue", "Green",
